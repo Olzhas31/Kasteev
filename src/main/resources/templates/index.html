@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ә. Қастеев атындағы музей</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+        <div class="site-logo">
+            <a href="/">Ә. Қастеев атындағы музей</a>
+        </div>
+
+        <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#"
+                                                                                                            class="site-menu-toggle js-menu-toggle text-white"><span
+                class="icon-menu h3"></span></a></div>
+
+        <div class="main-menu">
+            <ul class="js-clone-nav">
+                <li><a href="#section-home" class="nav-link">Басты бет</a></li>
+                <li><a href="#section-photos" class="nav-link">Суреттер</a></li>
+                <li><a href="#section-bio" class="nav-link">Музей</a></li>
+                <li><a href="#section-blog" class="nav-link">Жаңалықтар</a></li>
+                <li><a href="#section-comments" class="nav-link">Пікірлер</a></li>
+                <li><a href="#section-contact" class="nav-link">Пікір қалдыру</a></li>
+            </ul>
+            <ul class="social js-clone-nav">
+                <li><a href="https://www.facebook.com/gmi.rk"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/kasteyev_museum/"><span class="icon-instagram"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="site-section-hero bg-image" style="background-image: url('images/01.jpeg');"
+                 data-stellar-background-ratio="0.5" id="section-home">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center">
+                    <h1 class="text-white heading text-uppercase" data-aos="fade-up">Қош келдіңіздер</h1>
+                    <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">Музей келушілерге күн сайын
+                        дүйсенбі мен әр айдың соңғы күнінен басқа күндері сағат
+                        10.00-ден 18.00-ге дейін ашық.
+                        Касса сағат 10.00-ден 17.30-ға
+                        дейін жұмыс істейді</p>
+                    <p data-aos="fade-up" data-aos-delay="100"><a href="#section-contact"
+                                                                  class="btn btn-primary btn-md smoothscroll">Байланыс</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid">
+
+            <section class="row align-items-stretch photos" id="section-photos">
+                <div class="col-12">
+                    <div class="row align-items-stretch">
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/1.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/1.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/2.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/2.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/3.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/3.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/4.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/4.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/5.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/5.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/6.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/6.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/7.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/7.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/8.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/8.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/9.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/9.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/10.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/10.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/11.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/11.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/12.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/12.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/13.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/13.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/14.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/14.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/15.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/15.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="images/16.jpg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/16.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/17.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/17.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/18.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/18.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/19.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/19.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="images/20.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/20.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="images/21.jpeg" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="images/21.jpeg" alt="Image" class="img-fluid">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-search"></span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section> <!-- #section-photos -->
+
+            <section class="site-section" id="section-testimonial">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="heading text-uppercase text-white">Ә. Қастеев </h2>
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-12">
+
+                                    <div class="owl-carousel slide-one-item home-slider">
+
+                                        <div class="testimony text-center px-md-4">
+                                            <figure class="mx-auto d-inline-block">
+                                                <img src="images/28.jpg" alt="Image"
+                                                     class="mx-auto img-fluid w-25 rounded-circle">
+                                            </figure>
+                                            <p class="text-white"><strong>Қастеев жас Абайдың портретін салып
+                                                жатыр.</strong></p>
+                                            <blockquote>
+
+                                            </blockquote>
+                                        </div>
+
+                                        <div class="testimony text-center px-md-4">
+                                            <figure class="mx-auto d-inline-block">
+                                                <img src="images/27.jpg" alt="Image"
+                                                     class="mx-auto img-fluid w-25 rounded-circle">
+                                            </figure>
+                                            <p class="text-white"><strong>Қастеев Амангелді Имановтың портретін салып
+                                                жатыр.</strong></p>
+                                            <blockquote>
+
+                                            </blockquote>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="site-section darken-bg" id="section-bio">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2 class="heading text-uppercase text-white">Мұражай тарихы</h2>
+                            <figure class="mb-5" data-aos="fade-up"><img src="images/001.jpg" alt="Image"
+                                                                         class="img-fluid w-50 rounded"></figure>
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <h2 class="text-white">Қазақстан Республикасы мемлекеттік Ә. Қастеев атындағы өнер
+                                    мұражайы - 1976 жылы Т.Г. Шевченко атындағы Қазақ мемлекеттік көркемсурет
+                                    галереясының (1935 жылы қаланған) және Республикалық қолданбалы өнер музейінің (1970
+                                    жылы қаланған) қоры негізінде қаланған.</h2>
+                                <p>Музейдің бай, алуан түрлі, баға жетпес коллекциясы
+                                    Қазақстанның, Еуропа мен Азия елдерінің көркем мәдениеті, өткен және қазіргі заман
+                                    шеберлері туралы жарқын түсінік береді. Музей қорындағы экспонаттар саны 25 мыңнан
+                                    асады.</p>
+                                <p></p>
+                                <h3 class="text-white mt-5">Мұражай жайлы</h3>
+                                <p>1984 жылы қаңтарда музейге Қазақ КСР Халық суретшісі Әбілхан Қастеевтің есімі
+                                    берілді.
+
+                                    ЮНЕСКО-ның шешімімен 2004 жылы Әбілхан Қастеевтің 100 жылдық мерейтойы кең көлемде
+                                    атап өтілді. 2004 жылдың 15 қаңтарында Әбілхан Қастеевтің мерейтойлық көрмесінің
+                                    салтанатты ашылуы болды. Көрме суретшінің күллі шығармаларын қамтыды. Атап айтар
+                                    болсақ, 400-ден аса акварельдік және кескіндеме туындылары, фотоқұжаттар, суретшінің
+                                    жеке заттары, кинохроника музейдің үлкен төрт залдарында қойылды.
+                                </p>
+                                <p>Сонымен қатар суретшінің көрмесі Париж қаласындағы ЮНЕСКО-ның штаб-пәтерінде және
+                                    республиканың облыс орталықтарында өткізілді. Жаркентте Ә. Қастеев атындағы
+                                    көркемсурет музейі ашылса, Чижин ауылында Ә. Қастеев атындағы саябақ ашылды.</p>
+                                <div class="d-block d-md-flex mt-5">
+                                    <div class="mr-md-auto mr-2">
+                                        <ul class="ul-check list-unstyled success">
+                                            <li>Құрылған уақыты 1976</li>
+
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="site-section" id="section-blog">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <h2 class="heading text-uppercase text-white" data-aos="fade-up">Жаңалықтар</h2>
+                                <div class="col-md-12 mb-4" data-aos="fade-up">
+                                    <div class="d-md-flex d-block blog-entry align-items-start">
+                                        <div class="mr-0 mr-md-5 mb-3 img-wrap"><img src="images/23.jpg" alt="Image"
+                                                                                     class="img-fluid"></a></div>
+                                        <div>
+                                            <h2 class="mt-0 mb-2">«Балалар жылына» орай ұйымдастырылған «Кемпірқосақ»
+                                                атты Республикалық көрмеcі</h2>
+                                            <div class="meta mb-3">2022 жылы 20 сәуірінде сағат 16.00-де Ә. Қастеев
+                                                атындағы ҚР Мемлекеттік өнер музейінің Орталық көрме залында «Балалар
+                                                жылына» орай ұйымдастырылған «Кемпірқосақ» атты Республикалық көрме
+                                                ашылады. Бұл көрме Бабалар аманаты жобасы аясында, Қазақстанның «Көркем
+                                                еңбек» пәні мұғалімдерінің қатысуымен өтеді.
+                                            </div>
+                                            <p>Көрме жетекшісі - Айсұлу Үсентаева.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4" data-aos="fade-up">
+                                    <div class="d-md-flex d-block blog-entry align-items-start">
+                                        <div class="mr-0 mr-md-5 mb-3 img-wrap"><img src="images/22.jpg" alt="Image"
+                                                                                     class="img-fluid"></a></div>
+                                        <div>
+                                            <h2 class="mt-0 mb-2">«Музейдің қолжетімді ортасын және барлық адамдардың
+                                                мәдени өмірге тең қатысуын қамтамасыз ету» тақырыбында дөңгелек
+                                                үстел</a></h2>
+                                            <div class="meta mb-3">
+                                                2022 жылы, 20 сәуір күні сағат 10:30-да ҚР Әбілхан Қастеев атындағы ҚР
+                                                Мемлекеттік өнер музейінде «Музейдің қолжетімді ортасын және барлық
+                                                адамдардың мәдени өмірге тең қатысуын қамтамасыз ету» тақырыбында
+                                                дөңгелек үстел өтеді.
+                                            </div>
+                                            <p>Өтетін орны: Ә. Қастеев атындағы ҚР МӨМ-нің дәрісханасы
+
+                                                Дөңгелек үстел модераторы - Светлана Жұмасұлтанқызы Көпжанова,
+
+                                                Ә. Қастеев ат. ҚР МӨМ директорының ғылым істер жөніндегі орынбасары</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4" data-aos="fade-up">
+                                    <div class="d-md-flex d-block blog-entry align-items-start">
+                                        <div class="mr-0 mr-md-5 mb-3 img-wrap"><a href="#"><img src="images/24.jpg"
+                                                                                                 alt="Image"
+                                                                                                 class="img-fluid"></a>
+                                        </div>
+                                        <div>
+                                            <h2 class="mt-0 mb-2">Алиарова Васпие Исмаилқызының «Қырымтатарларының
+                                                ғажайып кесте өрнектері» атты жеке көрмесі    </a></h2>
+                                            <div class="meta mb-3">2022 жылы 30 наурызда сағат 16.00-де Ә. Қастеев
+                                                атындағы ҚР Мемлекеттік өнер музейінің Орталық көрме залында Алиарова
+                                                Васпие Исмаилқызының «Қырымтатарларының ғажайып кесте өрнектері» атты
+                                                жеке көрмесі ашылады.
+                                            </div>
+                                            <p>Көрмені 2022 ж. 12 сәуірге дейін тамашалауға болады
+
+                                                Жұмыс уақыты: 10-00 – 18-00. Демалыс күн: дүйсенбі
+
+                                                Көрме жетекшісі Айсұлу Үсентаева</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-4" data-aos="fade-up">
+                                    <div class="d-md-flex d-block blog-entry align-items-start">
+                                        <div class="mr-0 mr-md-5 mb-3 img-wrap"><img src="images/25.jpg" alt="Image"
+                                                                                     class="img-fluid"></a></div>
+                                        <div>
+                                            <h2 class="mt-0 mb-2"><a href="#">Раис Баширидің «Түс пен жарық» атты
+                                                мерейтойлық көрмесі</a></h2>
+                                            <div class="meta mb-3">Баширидің «Түс пен жарық» атты мерейтойлық көрмесінің
+                                                ашылу салтанаты өтеді.
+
+                                                Экспозицияда 40-тан аса кескіндеме туындылары халық назарына ұсынылады.
+                                                Раис Башири 1951 жылы 25 мамырда Орынбор облысында дүниеге келген. 1990
+                                                жылдары Алматыға қоныс аударады. Бала күнінен өнер мен суретшілер жайлы
+                                                кітаптарды оқығанды, қоршаған ортасын суретке түсіргенді жақсы көрген.
+
+                                                Белоруссияда өмір сүрген аз уақыт ішінде белгілі суретші Бидер Вольфпен
+                                                танысып, алдағы өнер жолының қалыптасуына әсерін тигізген сурет өнері
+                                                жайлы құнды сабақтар алады.
+                                            </div>
+                                            <p>Көрме 2022 жылдың сәуір айының 17-не дейін жалғасады.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <div class="custom-pagination">
+                                        <span>1</span>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <span>...</span>
+                                        <a href="#">7</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container" style="padding-bottom: 100px" id="section-comments">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2 class="heading text-uppercase text-white" data-aos="fade-up">Музей көрермендерінің пікірлері</h2>
+                        <a href="#section-contact" th:if="${messages.isEmpty()}">Әзірше пікір жоқ. Пікір қалдыру</a>
+                        <table style="width:100%">
+                            <tr th:each="m : ${messages}">
+                                <th style="width:25%" th:text="${m.getSurname()} + ' ' + ${m.getName()}">Firstname</th>
+                                <th th:text="${m.getContent()}">Age</th>
+                                <th style="width:10%" th:text="${m.getDate()}">Age</th>
+                                <th style="width:10%" sec:authorize="hasAuthority('ADMIN')">
+                                    <a th:href="@{'/delete?id=' + ${m.getId()}}">Өшіру</a>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <section class="site-section darken-bg" id="section-contact">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2 class="text-white mb-5 heading">ПІКІР ҚАЛДЫРУ ФОРМАСЫ</h2>
+
+                            <form th:action="@{/add}" th:method="post" th:object="${message}">
+                                <div class="row form-group">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <label class="text-white" for="fname">Тегіңіз</label>
+                                        <input type="text" id="fname" class="form-control" th:field="*{surname}">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="text-white" for="lname">Есіміңіз</label>
+                                        <input type="text" id="lname" class="form-control" th:field="*{name}">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="text-white" for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" th:field="*{email}">
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label class="text-white" for="subject">Тақырып</label>
+                                        <input type="text" id="subject" class="form-control" th:field="*{title}">
+                                    </div>
+                                </div>
+
+                                <input th:type="hidden" th:field="*{date}">
+
+                                <div class="row form-group mb-5">
+                                    <div class="col-md-12">
+                                        <label class="text-white" for="message">Хабарламаңыз</label>
+                                        <textarea name="message" id="message" cols="30" rows="7" class="form-control"
+                                                  placeholder="Хабарламаңызды осында жазыңыз..." th:field="*{content}"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <input type="submit" value="Хатты жіберу"
+                                               class="btn btn-primary btn-md text-white">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center py-5">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger</a>
+                        Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div> <!-- .site-wrap -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
