@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Әбілхан Қастеев атындағы музей</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aruzhan.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+        <div class="site-logo">
+            <a href="/">Әбілхан Қастеев атындағы музей</a>
+        </div>
+
+        <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#"
+                                                                                                            class="site-menu-toggle js-menu-toggle text-white"><span
+                class="icon-menu h3"></span></a></div>
+
+        <div class="main-menu">
+            <ul class="js-clone-nav">
+                <li><a href="/" class="nav-link">Басты бет</a></li>
+                <li><a href="/time" class="nav-link">Жұмыс уақыты</a></li>
+                <li><a href="#section-photos" class="nav-link">Суреттер</a></li>
+                <li><a href="#section-bio" class="nav-link">Музей</a></li>
+                <li><a href="#section-blog" class="nav-link">Жаңалықтар</a></li>
+                <li><a href="#section-comments" class="nav-link">Пікірлер</a></li>
+                <li><a href="#section-contact" class="nav-link">Пікір қалдыру</a></li>
+            </ul>
+            <ul class="social js-clone-nav">
+                <li><a href="https://www.facebook.com/gmi.rk"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/kasteyev_museum/"><span class="icon-instagram"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="site-section-hero bg-image" style="background-image: url('images/01.jpeg');"
+                 data-stellar-background-ratio="0.5" id="section-home">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center">
+                    <h1 class="text-white heading text-uppercase" data-aos="fade-up">Қош келдіңіздер</h1>
+                    <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">Музей келушілерге күн сайын
+                        дүйсенбі мен әр айдың соңғы күнінен басқа күндері сағат
+                        10.00-ден 18.00-ге дейін ашық.
+                        Касса сағат 10.00-ден 17.30-ға
+                        дейін жұмыс істейді</p>
+                    <p data-aos="fade-up" data-aos-delay="100"><a href="#section-contact"
+                                                                  class="btn btn-primary btn-md smoothscroll">Байланыс</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="timetable-img text-center">
+                <img src="img/content/timetable.png" alt="">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <h2>Жұмыс кестесі</h2>
+                    <thead>
+                    <tr class="bg-light-gray">
+                        <th class="text-uppercase">Уақыт
+                        </th>
+                        <th class="text-uppercase">Дүйсенбі</th>
+                        <th class="text-uppercase">Сейсенбі</th>
+                        <th class="text-uppercase">Сәрсенбі</th>
+                        <th class="text-uppercase">Бейсенбі</th>
+                        <th class="text-uppercase">Жұма</th>
+                        <th class="text-uppercase">Сенбі</th>
+                        <th class="text-uppercase">Жексенбі</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="align-middle">09:00-13:00</td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-middle">13:00-14:00</td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Техникалық үзіліс</span>
+                        </td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Техникалық үзіліс</span>
+                        </td>
+                        <td>
+                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Техникалық үзіліс</span>
+                        </td>
+                        <td>
+                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Техникалық үзіліс</span>
+                        </td>
+                        <td>
+                            <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Техникалық үзіліс</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="align-middle">14:00-18:00</td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Демалыс уақыты</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                        <td>
+                            <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Жұмыс істейміз</span>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+</div> <!-- .site-wrap -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

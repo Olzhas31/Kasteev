@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Әбілхан Қастеев атындағы музей</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="200">
+
+
+<div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="header-bar d-flex d-lg-block align-items-center site-navbar-target" data-aos="fade-right">
+        <div class="site-logo">
+            <a href="/">Әбілхан Қастеев атындағы музей</a>
+        </div>
+
+        <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#"
+                                                                                                            class="site-menu-toggle js-menu-toggle text-white"><span
+                class="icon-menu h3"></span></a></div>
+
+        <div class="main-menu">
+            <ul class="js-clone-nav">
+                <li><a href="#section-home" class="nav-link">Басты бет</a></li>
+                <li><a href="/time" class="nav-link">Жұмыс уақыты</a></li>
+                <li><a href="#section-photos" class="nav-link">Суреттер</a></li>
+                <li><a href="#section-bio" class="nav-link">Музей</a></li>
+                <li><a href="#section-blog" class="nav-link">Жаңалықтар</a></li>
+                <li><a href="#section-comments" class="nav-link">Пікірлер</a></li>
+                <li><a href="#section-contact" class="nav-link">Пікір қалдыру</a></li>
+            </ul>
+            <ul class="social js-clone-nav">
+                <li><a href="https://www.facebook.com/gmi.rk"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/kasteyev_museum/"><span class="icon-instagram"></span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <section class="site-section-hero bg-image" style="background-image: url('images/01.jpeg');"
+                 data-stellar-background-ratio="0.5" id="section-home">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center">
+                    <h1 class="text-white heading text-uppercase" data-aos="fade-up">Қош келдіңіздер</h1>
+                    <p class="lead text-white mb-5" data-aos="fade-up" data-aos-delay="100">Музей келушілерге күн сайын
+                        дүйсенбі мен әр айдың соңғы күнінен басқа күндері сағат
+                        10.00-ден 18.00-ге дейін ашық.
+                        Касса сағат 10.00-ден 17.30-ға
+                        дейін жұмыс істейді</p>
+                    <p data-aos="fade-up" data-aos-delay="100"><a href="#section-contact"
+                                                                  class="btn btn-primary btn-md smoothscroll">Байланыс</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="post-popup pst-pj">
+            <div class="post-project">
+                <h3>Билет сатып алу</h3>
+                <div class="post-project-fields">
+                    <form th:method="POST" class="user" th:action="@{/buy}" th:object="${ticket}">
+                        <div class="row" th:if="${ticketCount == 0}">
+                            <div class="col-lg-12">
+                                <span >Өкінішке орай билеттер жоқ</span>
+                            </div>
+                        </div>
+
+                        <div class="row" th:if="${ticketCount != 0}">
+                            <div class="col-lg-12">
+                                <span>Күні: </span>
+                                <span th:text="${date}"></span>
+                                <hr>
+                                <span>Қалған билеттер саны:</span>
+                                <span th:text="${ticketCount}"></span>
+                                <hr>
+                                <strong>Кредит картасы</strong>
+                                <hr>
+                                <div class="form-group">
+                                    <label for="name">ТАӘ</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name" th:field="*{name}">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Карта нөмірі</label>
+                                    <div class="input-group">
+                                        <input class="form-control" type="text"
+                                               placeholder="0000 0000 0000 0000" autocomplete="email" th:field="*{number}">
+                                        <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <i class="mdi mdi-credit-card"></i>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>Ай</label>
+                                    <input type="number" placeholder="1">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group" style="width: auto;">
+                                    <label>Жылы     </label>
+                                    <input type="number" placeholder="2022">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>CVV/CVC</label>
+                                    <input class="form-control" type="number" placeholder="123">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="col-lg-12">
+                                <label>Электрондық почта</label>
+                                <input type="text"  name="title" placeholder="Email:" th:field="*{email}">
+                            </div>
+                            <div class="col-lg-12">
+                                <ul>
+                                    <li>
+                                        <button class="active" type="submit" >Сатып алу</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#" title="">X</a>
+            </div>
+        </div>
+    </main>
+
+</div> <!-- .site-wrap -->
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
