@@ -21,8 +21,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: kasteevmuseum01@gmail.com
-    password: btlkarhvfljwfadq
+    username: kasteevmuseum02@gmail.com
+    password: dtjikshozrdqdgyq
     properties:
       mail:
         smtp:
